@@ -1,0 +1,6 @@
+face_cards = 12
+total_cards = 52
+
+probability = face_cards / total_cards
+
+print("Probability of drawing a face card:", probability)

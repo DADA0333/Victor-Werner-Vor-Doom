@@ -1,0 +1,8 @@
+A = {1, 2, 3, 4}
+B = {3, 4, 5, 6}
+
+print("Union of A and B:", A | B)
+print("Intersection of A and B:", A & B)
+print("Difference (A - B):", A - B)
+cartesian_product = {(a, b) for a in A for b in B}
+print("Cartesian Product of A and B:", cartesian_product)

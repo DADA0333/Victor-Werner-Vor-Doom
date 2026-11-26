@@ -1,0 +1,19 @@
+A = {1, 2, 3}
+
+R = {(1,1), (2,2), (3,3), (1,2), (2,1)}
+
+reflexive = all((a, a) in R for a in A)
+print("Reflexive:", reflexive)
+
+symmetric = all((b, a) in R for (a, b) in R)
+print("Symmetric:", symmetric)
+
+transitive = all((a, c) in R
+                 for (a, b) in R
+                 for (b2, c) in R
+                 if b == b2)
+
+print("Transitive:", transitive)
+
+equivalence = reflexive and symmetric and transitive
+print("Equivalence Relation:", equivalence)
